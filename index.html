@@ -37,6 +37,21 @@
         border-bottom: 2px solid #8b0000; /* deep red line */
     }
 
+    /* Center banner */
+    .center-banner {
+        position: absolute; /* floats above navbar contents */
+        left: 50%;
+        transform: translateX(-50%); /* center horizontally */
+        color: #f5f5f5;
+        font-weight: bold;
+        background-color: #8b0000;
+        padding: 5px 15px;
+        border-radius: 3px;
+        font-size: 1rem;
+        text-align: center;
+        pointer-events: none; /* ensures nav links are clickable */
+    }
+
     .navbar .logo {
         font-weight: bold;
         font-size: 1.5rem;
@@ -78,20 +93,6 @@
         text-align: center;
         padding: 0 20px;
     } padding: 0 20px;
-    }
-    
-    .coming-soon {
-        position: fixed;
-        top: 0; /* pinned to the very top */
-        left: 50%; /* center horizontally */
-        transform: translateX(-50%); /* perfect horizontal centering */
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: #f5f5f5;
-        background-color: rgba(139,0,0,0.8); /* semi-transparent deep red */
-        padding: 8px 20px;
-        border-radius: 0 0 5px 5px; /* rounded bottom corners */
-        z-index: 102; /* above navbar */
     }
 
     .hero h1 {
@@ -209,6 +210,7 @@
 <!-- NAVBAR -->
 <header class="navbar">
     <div class="logo">ETD</div>
+    <div class="center-banner">Coming Soon to AZ</div>
     <nav class="nav-links">
         <a href="#">Our Story</a>
         <a href="#">FAQs</a>
@@ -216,9 +218,6 @@
         <a href="#">Sign In</a>
     </nav>
 </header>
-
-<!-- Coming Soon Banner -->
-<div class="coming-soon">Coming Soon to AZ</div>
     
 <!-- HERO -->
 <section class="hero">
